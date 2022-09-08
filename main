@@ -27,10 +27,10 @@ int main() {
     //int adcResult = 333;
     char newbstr[10000];
     itoa(x, newbstr, 2);
-    printf("%d\n", strlen(newbstr));
-    printf("%s\n", newbstr);
+    //printf("%d\n", strlen(newbstr));
+    //printf("%s\n", newbstr);
     if (strlen(newbstr) >= 10) {
-        printf("10 bit of the entered number in the binary system: %c\n", newbstr[9]);
+        printf("tenth bit of the entered number in the binary system: %c\n", newbstr[9]);
         return 0;
     }
     else{
@@ -39,7 +39,7 @@ int main() {
         //printf("%d\n", strlen(newostr));
         //printf("%s\n", newostr);
         if(strlen(newostr) >= 10){
-            printf("10 bit of the entered number in the octal system: %c\n", newostr[9]);
+            printf("tenth bit of the entered number in the octal system: %c\n", newostr[9]);
             return 0;
         }
         else{
@@ -48,8 +48,11 @@ int main() {
             //printf("%d\n", strlen(newdstr));
             //printf("%s\n", newdstr);
             if(strlen(newdstr) >= 10){
-                printf("10 bit of the entered number in the hexadecimal system: %c\n", newdstr[9]);
+                printf("tenth bit of the entered number in the hexadecimal system: %c\n", newdstr[9]);
                 return 0;
+            }
+            else{
+                printf("oh shit...\nit seems that there is simply no tenth bit in this number((\nshocked plus tilted...\n");
             }
         }
     }
