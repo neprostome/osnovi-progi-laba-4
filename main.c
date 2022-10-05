@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 /*
 int dec2bin(int num)
@@ -25,8 +26,15 @@ int main() {
     printf("If the number below is 1, then the number you entered falls within the required range, otherwise it doesnt fall within\nthe required range:\n%d\n", a);
     //int bin = dec2bin(x);
     //int adcResult = 333;
-    char newbstr[10000];
-    itoa(x, newbstr, 2);
+    printf("Type dignit for another ex\n");
+    int x1;
+    scanf("%d", &x1);
+    bool c = x1 & (1 << 10);
+    printf("%d", c);
+}
+    /*
+    char newbstr[1000];
+    itoa(x1, newbstr, 2);
     //printf("%d\n", strlen(newbstr));
     //printf("%s\n", newbstr);
     if (strlen(newbstr) >= 10) {
@@ -34,7 +42,7 @@ int main() {
         return 0;
     }
     else{
-        char newostr[10000];
+        char newostr[1000];
         itoa(x, newostr, 8);
         //printf("%d\n", strlen(newostr));
         //printf("%s\n", newostr);
@@ -43,7 +51,7 @@ int main() {
             return 0;
         }
         else{
-            char newdstr[10000];
+            char newdstr[1000];
             itoa(x, newdstr, 16);
             //printf("%d\n", strlen(newdstr));
             //printf("%s\n", newdstr);
@@ -61,3 +69,23 @@ int main() {
     //printf("%x\n", newbstr[9]);
     return 0;
 }
+
+#include <stdio.h>
+#include <stdbool.h>
+
+int main() {
+    int a, g;
+    char s[2][100] = {"Yah", "No"};
+    scanf("%d", &a);
+    bool checker = true;
+
+    for(int i = 88; i <= 99; i++)
+        checker *= (a - i);
+
+    printf("%s\n", s[checker]);
+
+    scanf("%d", &x1);
+    bool c = x1 & (1 << 10);
+    printf("%d", c);
+}
+ */
